@@ -30,50 +30,35 @@
         <div class="product_kind_choice">
             <div class="choice_container">
                 <div class="basic_choice">
-                    <div class="card_choice" onclick="show_product(this)" onmouseleave="click_choice_leave(this)" onmouseover="click_choice(this)">
+                    <div class="card_choice">
                         <div class="img">
                             <img src="{{asset("res/shert.png")}}" alt="">
                         </div>
-                        <p>
-                            <span class="text">T-shirts</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </p>
+                        <i class="fas fa-toggle-off" onclick="toggle_on(this)"></i>
                     </div>
-                    <div class="card_choice" onclick="show_product(this)" onmouseleave="click_choice_leave(this)" onmouseover="click_choice(this)">
+                    <div class="card_choice">
                         <div class="img">
                             <img src="{{asset("res/sweater.png")}}" alt="">
                         </div>
-                        <p>
-                            <span class="text">Sweaters</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </p>
+                        <i class="fas fa-toggle-off" onclick="toggle_on(this)"></i>
                     </div>
-                    <div class="card_choice" onmouseleave="click_choice_leave(this)" onmouseover="click_choice(this)">
+                    <div class="card_choice">
                         <div class="img">
                             <img src="{{asset("res/pants.png")}}" alt="">
                         </div>
-                        <p>
-                            <span class="text">Pants</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </p>
+                        <i class="fas fa-toggle-off" onclick="toggle_on(this)"></i>
                     </div>
-                    <div class="card_choice" onmouseleave="click_choice_leave(this)" onmouseover="click_choice(this)">
+                    <div class="card_choice">
                         <div class="img">
                             <img src="{{asset("res/sock.png")}}" alt="">
                         </div>
-                        <p>
-                            <span class="text">Socks</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </p>
+                        <i class="fas fa-toggle-off" onclick="toggle_on(this)"></i>
                     </div>
-                    <div class="card_choice" onmouseleave="click_choice_leave(this)" onmouseover="click_choice(this)">
+                    <div class="card_choice">
                         <div class="img">
                             <img src="{{asset("res/shorts.png")}}" alt="">
                         </div>
-                        <p>
-                            <span class="text">Shorts</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </p>
+                        <i class="fas fa-toggle-off" onclick="toggle_on(this)"></i>
                     </div>
                 </div>
             </div>

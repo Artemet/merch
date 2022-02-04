@@ -28,5 +28,11 @@ var temp_header = 0; // window.slider_click=(elem)=> {
 //     get_slider_container.src = slider_imgs[temp_header];
 //     console.log(elem);
 // }
+
+var get_toggle = document.querySelector(".card_choice i");
+
+window.toggle_on = function (on) {
+  get_toggle.classList = "fas fa-toggle-on";
+};
 /******/ })()
 ;

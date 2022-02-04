@@ -21,3 +21,7 @@ let temp_header = 0;
 //     get_slider_container.src = slider_imgs[temp_header];
 //     console.log(elem);
 // }
+const get_toggle = document.querySelector(".card_choice i");
+window.toggle_on=(on)=>{
+    get_toggle.classList = "fas fa-toggle-on";
+}

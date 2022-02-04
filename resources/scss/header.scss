@@ -9,15 +9,29 @@ $color_blue: #384d47;
 body{
     font-family: 'Rubik', sans-serif;
     margin: 0;
+    background-color: $color_pink;
 }
 .menu{
     display: none;
 }
 .header{
-    background-color: $color_blue;
+    background-color: $color_green;
     padding: $veb_padding;
     .part_sub{
         display: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        padding: 5px;
+        background-color: $color_white;
+        color: $color_green;
+        p{
+            margin: 0;
+            transition: 0.5s;
+        }
+    }
+    p:hover{
+        color: $color_pink;
+        text-decoration: underline;
     }
     .img{
         transform: rotate(30deg);
@@ -43,6 +57,9 @@ body{
     }
     .network_line{
         width: fit-content;
+        a{
+            text-decoration: none;
+        }
         i{
             display: block;
             text-align: center;
@@ -51,7 +68,7 @@ body{
             color: $color_white;
         }
         i:hover{
-            color: $color_camouflage;
+            color: $color_pink;
         }
         i.discord{
             padding: 8px 0;
@@ -65,13 +82,13 @@ body{
             color: $color_grey;
         }
         i:hover{
-            background-color: $color_camouflage;
+            background-color: $color_pink;
             color: $color_white;
         }
     }
     .navigation{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr auto;
         position: relative;
         h1{
             margin: 0;
@@ -82,10 +99,10 @@ body{
             display: flex;
             border-radius: 5px;
             align-items: center;
-            &:hover i{
-                transform: rotate(90deg);
-                color: $color_camouflage;
-            }
+            //&:hover i{
+            //    transform: rotate(90deg);
+            //    color: $color_pink;
+            //}
             i.search{
                 padding: 6px 5px;
             }
@@ -96,7 +113,7 @@ body{
             padding: 5px;
             margin-left: 20px;
             color: $color_white;
-            background-color: $color_camouflage;
+            background-color: $color_pink;
             .hr{
                 height: 19px;
                 margin-right: 10px;
@@ -112,7 +129,7 @@ body{
                 font-size: 20px;
             }
             a:hover{
-                border-bottom: 3px solid $color_camouflage;
+                border-bottom: 3px solid $color_pink;
                 transition: 0.5s;
             }
         }
@@ -145,13 +162,12 @@ body{
                 font-size: 19px;
                 padding-left: 30px;
             }
-            i:hover{
+            i.show_open:hover{
                 transform: rotate(90deg);
-                color: $color_camouflage;
+                color: $color_pink;
             }
         }
         .navigation_part_two{
-            padding-left: 62%;
             font-weight: 500;
             .link_list{
                 display: flex;
@@ -161,5 +177,4 @@ body{
             }
         }
     }
-
 }

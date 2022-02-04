@@ -2,10 +2,11 @@
     text-align: center;
     padding-bottom: 30px;
     .basic_choice{
+        padding-left: 30px;
+        position: absolute;
         padding-top: 10px;
         justify-items: center;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        display: flex;
         i.arrow{
             display: none;
         }
@@ -15,42 +16,41 @@
             font-size: 20px;
         }
         .card_choice{
-            width: 85%;
+            padding: 40px 20px;
+            opacity: 78%;
+            width: 267px;
             //background: linear-gradient(35deg, $color_grey, $color_black);
             transition: 1s;
             border: 3px solid $color_white;
+            margin: 0 10px;
             border-radius: 40%;
-            background-color: $color_green;
+            background-color: white;
             img{
-                height: 130px;
+                height: 180px;
                 padding: 10px;
                 transition: 1s;
             }
-            p{
-                transition: 0.5s;
-                display: inline-flex;
-                color: $color_pink;
-            }
             i{
-                transition: 0.5s;
-                padding-left: 5px;
+                font-size: 40px;
+                padding-top: 50px;
+                color: rgb(75, 99, 109);
             }
         }
-        .card_choice:hover{
-            border: 5px solid $color_blue;
-            border-radius: 5px;
-        }
-        .card_choice:hover img{
-            transform: rotate(30deg);
-            height: 90px;
-        }
-        .card_choice:hover span{
-            display: none;
-        }
-        .card_choice:hover i{
-            color: $color_pink;
-            transform: rotate(90deg);
-        }
+        //.card_choice:hover{
+        //    border: 5px solid $color_blue;
+        //    border-radius: 5px;
+        //}
+        //.card_choice:hover img{
+        //    transform: rotate(30deg);
+        //    height: 90px;
+        //}
+        //.card_choice:hover span{
+        //    display: none;
+        //}
+        //.card_choice:hover i{
+        //    color: $color_pink;
+        //    transform: rotate(90deg);
+        //}
         .img{
             padding: 10px;
         }

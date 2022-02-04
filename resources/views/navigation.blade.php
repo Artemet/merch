@@ -2,7 +2,7 @@
     <div class="navigation">
         <div class="navigation_part navigation_part_one">
             <a href="#"><h1>drive_life_car</h1></a>
-            <i class="fas fa-stream"></i>
+            <i class="fas fa-stream show_open"></i>
             <label for="navigation_search">
                 <i class="fas fa-search search"></i>
                 <input type="text" id="navigation_search" placeholder="Search">
@@ -17,15 +17,25 @@
                     <a href="">MEN</a>
                     <div class="part_sub">
                         <p>Sherts</p>
+                        <p>Soks</p>
+                        <p>pans</p>
                     </div>
                 </div>
                 <div class="link_list_part">
                     <a href="">WOMEN</a>
-                    <div class="part_sub"></div>
+                    <div class="part_sub">
+                        <p>Sherts</p>
+                        <p>Soks</p>
+                        <p>pans</p>
+                    </div>
                 </div>
                 <div class="link_list_part">
                     <a href="">KIDS</a>
-                    <div class="part_sub"></div>
+                    <div class="part_sub">
+                        <p>Sherts</p>
+                        <p>Soks</p>
+                        <p>pans</p>
+                    </div>
                 </div>
             </div>
             <div class="basket">
