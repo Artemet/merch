@@ -1,0 +1,113 @@
+.type_product{
+    display: grid;
+    background: linear-gradient(
+            135deg, $color_grey, $color_black);
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    padding: $veb_padding;
+}
+.card_container{
+    align-items: center;
+    padding: $veb_padding;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.text {
+    background-color: $color_pink;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    .text_container_two{
+        display: none;
+    }
+    .number{
+        font-size: 18px;
+        font-weight: 600;
+        .number_page{
+            transition: 0.5s;
+            background-color: $color_pink;
+            border-radius: 50%;
+            padding: 5px 10px;
+        }
+        .number_page:hover{
+            color: $color_green;
+        }
+    }
+    h2{
+        font-size: 35px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .number_1{
+        color: $color_green;
+    }
+    button{
+        font-size: 20px;
+        border: 0;
+        border-radius: 5px;
+        transition: 0.5s;
+        background-color: $color_white;
+        color: $color_blue;
+    }
+    button:hover{
+        background-color: $color_blue;
+        color: $color_white;
+    }
+    .star_veb{
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        p.rate{
+            padding-left: 20px;
+        }
+    }
+    p.conditions{
+        padding-right: 33%;
+        line-height: 30px;
+    }
+    *{
+        position: relative;
+    }
+    &:before{
+        content: "";
+        transform: translate(-70%, -300px);
+        top: 0;
+        height: 900px;
+        border-radius: 50%;
+        width: 1600px;
+        display: block;
+        position: absolute;
+        background: $color_green;
+    }
+}
+.cardList{
+    text-align: center;
+    img{
+        height: 300px;
+    }
+    .card{
+        background-color: $color_grey;
+        width: fit-content;
+        p{
+            font-size: 20px;
+            background-color: $color_camouflage;
+            padding: 5px;
+            color: $color_white;
+        }
+        button{
+            width: 20%;
+            font-size: 20px;
+            background-color: $color_white;
+            color: $color_camouflage;
+            border: 0;
+            transition: 0.5s;
+            border-radius: 5px;
+            margin-bottom: 14px;
+        }
+        button:hover{
+            background-color: $color_black;
+            color: $color_white;
+        }
+    }
+}
