@@ -21,7 +21,16 @@ let temp_header = 0;
 //     get_slider_container.src = slider_imgs[temp_header];
 //     console.log(elem);
 // }
-const get_toggle = document.querySelector(".card_choice i");
+const get_toggle = document.querySelector(".card_container .toggle_on_text");
+const get_basic = document.querySelector(".basic_choice");
+const get_wear_block = document.querySelector(".wear_container");
+// const get_rapper = document.querySelector(".cardList_rapper");
+const get_text_block = document.querySelector(".text");
 window.toggle_on=(on)=>{
-    get_toggle.classList = "fas fa-toggle-on";
+    on.classList.toggle("fa-toggle-on");
+    on.classList.toggle("fa-toggle-off");
+    get_toggle.classList.toggle("fa-toggle-on");
+    get_basic.style.display = "none";
+    get_wear_block.style.display = "block";
+    get_text_block.style.gridGap = "0px";
 }

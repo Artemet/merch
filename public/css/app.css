@@ -24,11 +24,14 @@ body {
   margin: 0;
   transition: 0.5s;
 }
+.header .logo {
+  height: 70px;
+}
 .header p:hover {
   color: #d9a9a5;
   text-decoration: underline;
 }
-.header .img {
+.header .img .show_product_img {
   transform: rotate(30deg);
   height: 50vh;
   -o-object-fit: cover;
@@ -56,6 +59,8 @@ body {
   width: fit-content;
 }
 .header .network_line {
+  z-index: 100;
+  position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -98,6 +103,7 @@ body {
 .header .navigation label {
   background-color: white;
   display: flex;
+  width: 100%;
   border-radius: 5px;
   align-items: center;
 }
@@ -177,11 +183,13 @@ body {
   padding-bottom: 30px;
 }
 .choice_container .basic_choice {
-  padding-left: 30px;
   position: absolute;
   padding-top: 10px;
   justify-items: center;
   display: flex;
+}
+.choice_container .basic_choice .img {
+  height: 189px;
 }
 .choice_container .basic_choice i.arrow {
   display: none;
@@ -201,14 +209,16 @@ body {
   border-radius: 40%;
   background-color: white;
 }
-.choice_container .basic_choice .card_choice img {
+.choice_container .basic_choice .card_choice .navigation_part_one .choice_kind {
   height: 180px;
   padding: 10px;
   transition: 1s;
 }
+.choice_container .basic_choice .card_choice p {
+  color: #a0a79e;
+}
 .choice_container .basic_choice .card_choice i {
   font-size: 40px;
-  padding-top: 50px;
   color: #4b636d;
 }
 .choice_container .basic_choice .img {
@@ -225,14 +235,15 @@ body {
 
 .card_container {
   padding: 50px;
+  padding-right: 0;
   display: grid;
   grid-template-columns: auto 1fr;
 }
 
 .text {
   background-color: #d9a9a5;
-  overflow: hidden;
   position: relative;
+  grid-gap: 270px;
   color: white;
 }
 .text .text_container_two {
@@ -246,19 +257,26 @@ body {
   transition: 0.5s;
   background-color: #d9a9a5;
   border-radius: 50%;
-  padding: 5px 10px;
+  display: inline-block;
+  line-height: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  width: 1.5em;
 }
 .text .number .number_page:hover {
   color: #7ca982;
 }
+.text .toggle_on_text {
+  padding: 20px 0;
+  font-size: 30px;
+  color: #d9a9a5;
+}
 .text h2 {
+  margin-top: 0;
   font-size: 35px;
 }
 .text p {
   font-size: 20px;
-}
-.text .number_1 {
-  color: #7ca982;
 }
 .text button {
   font-size: 20px;
@@ -281,7 +299,6 @@ body {
   padding-left: 20px;
 }
 .text p.conditions {
-  padding-right: 33%;
   line-height: 30px;
 }
 .text * {
@@ -289,22 +306,53 @@ body {
 }
 .text:before {
   content: "";
-  transform: translate(-70%, -300px);
+  transform: translate(-50%, -150px);
   top: 0;
-  height: 900px;
+  height: 800px;
   border-radius: 50%;
-  width: 1600px;
+  width: 900px;
   display: block;
   position: absolute;
-  background: #7ca982;
+  background: rgba(96, 147, 102, 0.95);
+}
+
+.cardList_rapper {
+  overflow-y: hidden;
+  border-radius: 100px 0 0 100px;
+  height: 400px;
+}
+
+#element::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: #f9f9fd;
+}
+
+#element::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #7ca982;
+}
+
+#element::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #f9f9fd;
 }
 
 .cardList {
   position: relative;
   text-align: center;
 }
-.cardList img {
-  height: 300px;
+.cardList .wear_container {
+  display: none;
+}
+.cardList .wear_container .wear_choice {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.cardList .wear_container .wear_choice .img {
+  height: 400px;
+  transform: rotate(30deg);
 }
 .cardList .card {
   background-color: #6b7478;
@@ -331,4 +379,11 @@ body {
 .cardList .card button:hover {
   background-color: #414141;
   color: #cfd9ce;
+}
+
+.img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
