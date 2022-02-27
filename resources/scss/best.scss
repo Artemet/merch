@@ -2,9 +2,11 @@
     text-align: center;
     padding-bottom: 30px;
     .basic_choice{
+        transition: 0.5s;
+        left: 0px;
         //padding-left: 270px;
         position: absolute;
-        padding-top: 10px;
+        //padding-top: 10px;
         justify-items: center;
         display: flex;
         .img{
@@ -36,12 +38,17 @@
                 }
             }
             p{
+                margin-top: 0;
                 color: rgb(160, 167, 158);
             }
             i{
                 font-size: 40px;
+                transition: 0.3s;
                 color: rgb(75, 99, 109);
             }
+        }
+        .card_choice:hover i{
+            color: $color_green;
         }
         //.card_choice:hover{
         //    border: 5px solid $color_blue;
@@ -61,5 +68,8 @@
         .img{
             padding: 10px;
         }
+    }
+    .basic_left{
+        left: 0;
     }
 }

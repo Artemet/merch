@@ -12,49 +12,84 @@
     display: grid;
     grid-template-columns: auto 1fr;
 }
+.number{
+    font-size: 28px;
+    text-align: left;
+    padding-left: 60px;
+    padding-top: 10px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    //padding-bottom: 20px;
+    .number_page{
+        transition: 0.5s;
+        background-color: $color_green;
+        border-radius: 50%;
+        display: inline-block;
+        line-height: 1.5em;
+        height: 1.5em;
+        text-align: center;
+        width: 1.5em;
+    }
+    .number_2{
+        color: $color_blue;
+    }
+}
 .text {
     background-color: $color_pink;
     position: relative;
+    align-items: center;
     grid-gap: 270px;
     color: white;
+    .text_container{
+        .card_arrow_slider{
+            color: $color_pink;
+            span{
+                padding: 0 7px;
+                font-size: 20px;
+            }
+            i{
+                transition: 0.3s;
+            }
+            i:hover{
+                color: white;
+            }
+        }
+        .comment{
+            input{
+                border: 0;
+                font-size: 17px;
+                transition: 0.5s;
+                padding: 5px;
+                border-radius: 5px;
+                padding-bottom: 50px;
+                margin-bottom: 10px;
+            }
+        }
+    }
     .text_container_two{
         display: none;
     }
-    .number{
-        font-size: 18px;
-        font-weight: 600;
-        .number_page{
-            transition: 0.5s;
-            background-color: #d9a9a5;
-            border-radius: 50%;
-            display: inline-block;
-            line-height: 1.5em;
-            height: 1.5em;
-            text-align: center;
-            width: 1.5em;
-        }
-        .number_page:hover{
-            color: $color_green;
-        }
-    }
     .toggle_on_text{
-        padding: 20px 0;
+        padding: 30px 0;
         font-size: 30px;
         color: $color_pink;
     }
     h2{
-        margin-top: 0;
+        margin: 0;
         font-size: 35px;
+        padding: 20px 0;
     }
     p{
         font-size: 20px;
+        margin: 10px 0;
     }
     button{
         font-size: 20px;
         border: 0;
-        border-radius: 5px;
+        border-radius: 50px;
+        padding: 5px 20px;
         transition: 0.5s;
-        background-color: $color_white;
+        background-color: $color_blue_lite;
         color: $color_blue;
     }
     button:hover{
@@ -65,19 +100,14 @@
         display: flex;
         font-size: 20px;
         align-items: center;
-        p.rate{
-            padding-left: 20px;
-        }
-    }
-    p.conditions{
-        line-height: 30px;
+        padding-bottom: 20px;
     }
     *{
         position: relative;
     }
     &:before{
         content: "";
-        transform: translate(-50%, -150px);
+        transform: translate(-50%, -160px);
         top: 0;
         height: 800px;
         border-radius: 50%;
@@ -85,6 +115,23 @@
         display: block;
         position: absolute;
         background: rgba(96, 147, 102, .95);
+    }
+}
+.text_new{
+    i.toggle_on_text{
+        display: none;
+    }
+    .number{
+        display: none;
+    }
+    .star_veb{
+        display: none;
+    }
+    p.comment{
+        font-size: 20px;
+    }
+    h2{
+        padding-bottom: 40px;
     }
 }
 .cardList_rapper{
@@ -116,8 +163,7 @@
     .wear_container{
         display: none;
         .wear_choice{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            //grid-template-columns: 1fr 1fr;
             .img{
                 height: 400px;
                 transform: rotate(30deg);

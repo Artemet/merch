@@ -58,11 +58,11 @@
         </div>
     </div>
     <div class="slider_container">
-        <i class="fas fa-arrow-left left_arrow" onclick="slider_click(0)"></i>
+        <i class="fas fa-angle-left"></i>
         <div class="img">
             <img src="{{asset("res/banner1.png")}}" alt="" class="header_img show_product_img">
         </div>
-        <i class="fas fa-arrow-right right_arrow" onclick="slider_click(1)"></i>
+        <i class="fas fa-angle-right"></i>
     </div>
     <div class="network_line">
         <a href="https://www.tiktok.com/@drive_life_car"><i class="fab fa-tiktok"></i></a>

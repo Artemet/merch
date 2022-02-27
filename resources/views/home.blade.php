@@ -15,9 +15,13 @@
     <title>drive_life_car merch</title>
 </head>
 <body>
+    <div class="information_line">
+        <p>T-shorts, Tops and Hoodies!</p>
+    </div>
     @include("navigation")
     @include("product_sea")
     @include("content")
+    @include("footer")
 </body>
 <script src="{{asset("js/home.js")}}"></script>
 </html>
