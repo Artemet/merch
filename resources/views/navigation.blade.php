@@ -1,12 +1,12 @@
 <div class="header">
     <div class="navigation">
         <div class="navigation_part navigation_part_one">
-            <a href="#">
+            <a href="{{asset("home")}}">
                 <div class="img logo">
                     <img src="{{asset("res/logo_veb.png")}}" alt="">
                 </div>
             </a>
-            <i class="fas fa-stream show_open"></i>
+            <i class="fa-solid fa-user"></i>
             <label for="navigation_search">
                 <i class="fas fa-search search"></i>
                 <input type="text" id="navigation_search" placeholder="Search">
@@ -56,17 +56,5 @@
                 <span>0</span>
             </div>
         </div>
-    </div>
-    <div class="slider_container">
-        <i class="fas fa-angle-left"></i>
-        <div class="img">
-            <img src="{{asset("res/banner1.png")}}" alt="" class="header_img show_product_img">
-        </div>
-        <i class="fas fa-angle-right"></i>
-    </div>
-    <div class="network_line">
-        <a href="https://www.tiktok.com/@drive_life_car"><i class="fab fa-tiktok"></i></a>
-        <a href="#"><i class="fab fa-discord discord"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
     </div>
 </div>

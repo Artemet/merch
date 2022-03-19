@@ -1,0 +1,94 @@
+.footer_container{
+    padding-top: 75px;
+    display: grid;
+    padding-left: 20px;
+    background: radial-gradient(circle farthest-corner at 100px 50px, $color_green, rgba(96, 147, 102, 0.95));
+    color: $color_white;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    .networks{
+        background-color: $color_blue;
+        border-radius: 10px;
+        width: fit-content;
+        padding: 10px;
+        i{
+            color: $color_white;
+            padding: 5px;
+            font-size: 24px;
+        }
+        i:hover{
+            color: $color_pink;
+            transition: 0.3s;
+        }
+    }
+    .footer_part{
+        p{
+            border-radius: 10px;
+            font-weight: 500;
+            line-height: 25px;
+            background-color: $color_blue;
+            padding: 10px;
+        }
+        label{
+            position: relative;
+            align-items: center;
+            display: flex;
+            input{
+                width: 100%;
+                padding: 8px 4px;
+                font-size: 15px;
+                border: 0;
+                border-radius: 5px;
+            }
+            ::placeholder{
+                font-size: 14px;
+                font-weight: 600;
+                color: $color_green;
+                letter-spacing: 1px;
+            }
+            i{
+                right: 0;
+                border-radius: 5px;
+                padding: 10px;
+                transition: 0.3s;
+                background-color: $color_blue;
+                position: absolute;
+            }
+            i:hover{
+                color: $color_pink;
+            }
+        }
+    }
+    .footer_part_menu{
+        padding: 0 100px;
+        line-height: normal;
+    }
+    h2{
+        margin-top: 0;
+        opacity: 90%;
+        padding-bottom: 20px;
+    }
+    .choice_pages{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        a{
+            text-decoration: none;
+            color: $color_white;
+            transition: 0.3s;
+            font-weight: 500;
+        }
+        a:hover{
+            color: $color_pink;
+        }
+        .pages_part{
+            line-height: 30px;
+            margin: 10px;
+            width: 150px;
+            border-radius: 10px;
+            padding: 10px;
+            display: grid;
+            background-color: $color_blue;
+        }
+    }
+}

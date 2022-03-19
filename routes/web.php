@@ -19,3 +19,21 @@ Route::get('/', function () {
 Route::get('/home', function (){
     return view('home');
 });
+Route::get('/about_web', function (){
+    return view('about_web');
+});
+Route::get('/channel', function (){
+    return view('channel');
+});
+Route::get('/about_me', function (){
+    return view('about_me');
+});
+Route::get('/payment', function (){
+    return view('payment');
+});
+Route::get('/delivery', function (){
+   return view('delivery');
+});
+Route::get('/question', function (){
+    return view('question');
+});

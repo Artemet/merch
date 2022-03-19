@@ -1,10 +1,22 @@
 @import "header";
 @import "best";
 @import "cardlist";
+@import "footer";
+@import "pages";
 .img{
     img{
         height: 100%;
         width: 100%;
         object-fit: contain;
     }
+}
+input{
+    outline: none;
+    color: $color_pink;
+}
+::placeholder{
+    color: rgba(96, 147, 102, 0.95);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }

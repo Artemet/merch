@@ -1,0 +1,115 @@
+h2.page_h2{
+    text-align: center;
+    padding: 20px 0;
+    color: $color_white;
+    background: radial-gradient(circle farthest-corner at 100px 50px, rgba(96, 147, 102, 0.95), $color_blue);
+}
+.img_history{
+    padding: 30px 340px;
+}
+.page_container{
+    text-align: center;
+    color: $color_white;
+    background-color: $color_blue;
+    border-radius: 10px;
+    margin: 0 200px;
+    padding: 10px 70px;
+    margin-bottom: 60px;
+    h3{
+        font-size: 30px;
+    }
+    p{
+        font-weight: 500;
+        padding: 0 80px;
+        line-height: 26px;
+    }
+    label{
+        position: relative;
+        input{
+            border-radius: 5px;
+            width: 80%;
+            padding: 5px;
+        }
+        button{
+            position: absolute;
+            padding: 5px;
+            font-weight: 600;
+            background-color: $color_white;
+            color: $color_blue;
+            transition: 0.5s;
+            border-radius: 5px;
+        }
+        button:hover{
+            color: $color_pink;
+        }
+    }
+}
+//double css
+
+//payment_page
+.payment_web{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .payment_web_part{
+        display: flex;
+        padding-bottom: 20px;
+        align-items: center;
+        .img{
+            height: 40px;
+        }
+        p{
+            padding-left: 30px;
+        }
+    }
+}
+.other_css{
+    text-align: left;
+}
+.question_css{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-top: 50px;
+    padding-left: 10px;
+    transition: 0.5s;
+    p {
+        padding-left: 30px;
+    }
+    a{
+        text-decoration: none;
+        color: $color_white;
+        transition: 0.5s;
+    }
+    span{
+        text-align: right;
+        padding-right: 20px;
+        font-weight: 500;
+        font-size: 30px;
+    }
+    span.arrow{
+        font-weight: 900;
+        transition: 0.5s;
+    }
+}
+.question_css:hover{
+    background: rgba(96, 147, 102, 0.95);
+}
+.question_css .arrow:hover{
+    color: $color_pink;
+}
+.question_css a:hover{
+    color: $color_pink;
+    text-decoration: underline;
+}
+//sub
+.sub{
+    padding: 5px 40px;
+    display: none;
+    padding-left: 0;
+    margin: 0;
+}
+.sub_on{
+    display: block;
+}
+.sub_off{
+    display: none;
+}
